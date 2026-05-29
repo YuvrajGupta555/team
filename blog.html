@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj | Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-bar"></div>
+  <nav class="navbar"><a href="index.html" class="nav-logo"><span class="b">[</span>YUV<span class="b">]</span></a>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="blog.html">Blog</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="hamburger" id="hbg" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="page-wrapper">
+    <section class="ph"><div class="container"><span class="ph-lbl">// blog/posts</span><h1 class="ph-title">Blog</h1><p class="ph-sub">Thoughts on cybersecurity, web development, and life as an IT student.</p></div></section>
+    <section class="section"><div class="container">
+      <div class="sh rev"><span class="sh-lbl">// latest</span><h2 class="sh-title">Featured <em>Article</em></h2><div class="sh-rule"></div></div>
+      <div class="card rev mt3" style="padding:2.5rem;">
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;">
+          <span class="tag tr">Cybersecurity</span>
+          <span class="mono tc-2" style="font-size:.7rem;">📅 November 2025</span>
+          <span class="mono tc-2" style="font-size:.7rem;">⏱ 6 min read</span>
+        </div>
+        <h2 style="font-family:var(--fh);font-size:1.55rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.8rem;line-height:1.25;">Why Every Web Developer Must Understand the OWASP Top 10</h2>
+        <p style="color:var(--txt2);font-size:.97rem;line-height:1.8;margin-bottom:1rem;">Most web developers focus on making things work — but how often do we stop to ask: <em style="color:var(--cyan);">could this be exploited?</em> The OWASP Top 10 covers the exact vulnerabilities attackers exploit against real applications every day. Studying these changed the way I write code.</p>
+        <p style="color:var(--txt2);font-size:.97rem;line-height:1.8;margin-bottom:1.5rem;">In this article I break down three critical risks for front-end developers: XSS, Broken Authentication, and Security Misconfiguration — with actionable takeaways for each.</p>
+        <div style="background:var(--surf2);border:1px solid var(--bdr);border-radius:4px;padding:1.25rem;margin-bottom:1.5rem;">
+          <p class="mono tc-g" style="font-size:.75rem;margin-bottom:.6rem;">// key_takeaways</p>
+          <p style="color:var(--txt2);font-size:.9rem;margin:.0 0 .4rem;">→ Always sanitise and validate user input — never trust the client</p>
+          <p style="color:var(--txt2);font-size:.9rem;margin:0 0 .4rem;">→ Use <code class="mono tc-g" style="font-size:.85em;">Content-Security-Policy</code> headers to limit XSS surfaces</p>
+          <p style="color:var(--txt2);font-size:.9rem;margin:0 0 .4rem;">→ Parameterise SQL queries — never concatenate user input directly</p>
+          <p style="color:var(--txt2);font-size:.9rem;margin:0;">→ Implement HTTPS everywhere and configure HSTS headers</p>
+        </div>
+        <span class="btn btn-ghost" style="font-size:.74rem;padding:.5rem 1.1rem;opacity:.7;cursor:default;">Full article coming soon</span>
+      </div>
+
+      <div class="sh rev mt3" style="margin-top:4rem;"><span class="sh-lbl">// archive</span><h2 class="sh-title">More <em>Articles</em></h2><div class="sh-rule"></div></div>
+      <div class="g3 mt3">
+        <div class="card rev"><div class="bc-meta"><span class="tag tc" style="margin:0;">Web Dev</span><span>Oct 2025</span><span>4 min</span></div><h3 class="bc-title">CSS Grid vs Flexbox: When to Use Which</h3><p class="bc-ex">A practical breakdown of the two most powerful CSS layout systems — with real examples from building this portfolio.</p><span class="tag tc">CSS3</span><span class="tag tg">HTML5</span></div>
+        <div class="card rev"><div class="bc-meta"><span class="tag ty" style="margin:0;">Database</span><span>Sep 2025</span><span>5 min</span></div><h3 class="bc-title">Database Normalisation Demystified: 1NF to 3NF</h3><p class="bc-ex">Struggling with normalisation? I was too. Here's the visual guide I wish I'd had for my DB assignment.</p><span class="tag ty">SQL</span><span class="tag tr">3NF</span></div>
+        <div class="card rev"><div class="bc-meta"><span class="tag tr" style="margin:0;">Security</span><span>Aug 2025</span><span>3 min</span></div><h3 class="bc-title">Why JS Form Validation Is Not Enough</h3><p class="bc-ex">Client-side validation improves UX but is never a security boundary. Server-side validation is non-negotiable.</p><span class="tag tr">Security</span><span class="tag tg">JS</span></div>
+        <div class="card rev"><div class="bc-meta"><span class="tag tg" style="margin:0;">Networking</span><span>Jul 2025</span><span>4 min</span></div><h3 class="bc-title">What I Learned from Cisco Packet Tracer</h3><p class="bc-ex">Tracing data paths, spotting failure points, and designing redundancy — my networking assignment reflection.</p><span class="tag tg">Networking</span><span class="tag tc">Packet Tracer</span></div>
+        <div class="card rev"><div class="bc-meta"><span class="tag tc" style="margin:0;">Study</span><span>Jun 2025</span><span>3 min</span></div><h3 class="bc-title">5 Tools Every IT Student Should Know</h3><p class="bc-ex">VS Code, Wireshark, draw.io, Git, and Packet Tracer — the tools that made the biggest difference in first year.</p><span class="tag tc">Tools</span><span class="tag ty">Tips</span></div>
+        <div class="card rev"><div class="bc-meta"><span class="tag ty" style="margin:0;">Career</span><span>May 2025</span><span>2 min</span></div><h3 class="bc-title">Getting Into Cybersecurity: Where I Started</h3><p class="bc-ex">My honest account of how I went from casual PC user to studying cybersecurity — and what I'd tell my past self.</p><span class="tag ty">Career</span><span class="tag tr">Security</span></div>
+      </div>
+    </div></section>
+  </div>
+  <footer class="footer"><div class="container"><div class="footer-logo">[YUV]</div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="blog.html">Blog</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div><p class="footer-copy">© 2025 Yuvraj · ICT114 Web Development · Wentworth Institute of Higher Education</p></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

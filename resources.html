@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj | Resources</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-bar"></div>
+  <nav class="navbar"><a href="index.html" class="nav-logo"><span class="b">[</span>YUV<span class="b">]</span></a>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="blog.html">Blog</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="hamburger" id="hbg" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="page-wrapper">
+    <section class="ph"><div class="container"><span class="ph-lbl">// resources.json</span><h1 class="ph-title">Web Resources</h1><p class="ph-sub">Curated knowledge on web security, hosting, scalability, user access, and availability — the pillars of professional web practice. (SLO E)</p></div></section>
+    <section class="section"><div class="container">
+      <div class="card rev" style="background:rgba(0,207,255,0.04);border-color:rgba(0,207,255,0.2);padding:1.75rem;margin-bottom:3rem;">
+        <p class="mono tc-c" style="font-size:.75rem;margin-bottom:.65rem;">// note from Yuvraj</p>
+        <p style="color:var(--txt2);font-size:.95rem;line-height:1.8;margin:0;">This page addresses <strong class="tc-c">SLO E</strong> — communicating about web-related issues including <strong class="tc-g">security</strong>, <strong class="tc-g">hosting</strong>, <strong class="tc-g">resource allocation</strong>, <strong class="tc-g">user access</strong>, <strong class="tc-g">availability</strong>, and <strong class="tc-g">scalability</strong>.</p>
+      </div>
+
+      <div class="sh rev"><span class="sh-lbl">// topic_01</span><h2 class="sh-title">Web <em>Security</em></h2><div class="sh-rule"></div></div>
+      <div class="card rev mt3 mb3"><p style="font-size:.95rem;color:var(--txt2);line-height:1.8;margin:0;">Web security protects applications from attacks. Core concerns include input validation, authentication, authorisation, encryption, and dependency management. The <strong class="tc-g">OWASP Top 10</strong> is the industry reference for critical application security risks. Common threats: SQL Injection, XSS, CSRF, and insecure direct object references. Secure headers (CSP, HSTS, X-Frame-Options) form a critical first line of defence.</p></div>
+      <div class="g3">
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🔐</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">OWASP Foundation</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Industry authority on web app security. Home of the Top 10, testing guides, and cheat sheets.</p><span class="tag tr">Security</span><span class="tag tg">Reference</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🛡️</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Mozilla Web Security</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Practical guidelines for configuring HTTP headers, TLS, cookies, and content security policies.</p><span class="tag tr">Headers</span><span class="tag tc">HTTPS</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🔎</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Have I Been Pwned</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Check if emails or passwords have been exposed in known data breaches. Essential for security awareness.</p><span class="tag tr">Breach</span><span class="tag ty">Awareness</span></div>
+      </div>
+
+      <div class="sh rev mt3" style="margin-top:4rem;"><span class="sh-lbl">// topic_02</span><h2 class="sh-title">Web <em>Hosting</em></h2><div class="sh-rule"></div></div>
+      <div class="card rev mt3 mb3"><p style="font-size:.95rem;color:var(--txt2);line-height:1.8;margin:0;">Hosting choices range from shared hosting to VPS, dedicated servers, and cloud platforms. Key considerations: <strong class="tc-g">uptime SLAs</strong>, <strong class="tc-c">server location / latency</strong>, <strong class="tc-g">SSL/TLS support</strong>, and <strong class="ty tc-g" style="color:var(--gold)">backup and recovery</strong> provisions. PaaS platforms like Vercel and Netlify simplify modern deployment significantly.</p></div>
+      <div class="g3">
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">☁️</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Vercel</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Developer PaaS with automatic Git deployments, global CDN, and free tier. Ideal for portfolios.</p><span class="tag tc">PaaS</span><span class="tag tg">CDN</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🌍</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Netlify</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Continuous deployment with edge hosting, form handling, and serverless functions.</p><span class="tag tc">Hosting</span><span class="tag ty">Free Tier</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🔵</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">AWS</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">World's largest cloud. EC2, S3, CloudFront, Route 53 — backbone of millions of production sites.</p><span class="tag tr">Enterprise</span><span class="tag tc">Cloud</span></div>
+      </div>
+
+      <div class="sh rev mt3" style="margin-top:4rem;"><span class="sh-lbl">// topic_03</span><h2 class="sh-title">Scalability &amp; <em>Availability</em></h2><div class="sh-rule"></div></div>
+      <div class="card rev mt3 mb3"><p style="font-size:.95rem;color:var(--txt2);line-height:1.8;margin:0;"><strong class="tc-g">Scalability</strong>: a system's ability to handle increased load — vertical (more power to one server) or horizontal (more servers). <strong class="tc-c">Availability</strong>: how reliably a system is accessible, expressed as a percentage (99.9% = ~8.7h downtime/year). Strategies: load balancing, CDN caching, database replication, health checks, auto-scaling groups, and redundant architecture to eliminate single points of failure.</p></div>
+      <div class="g2">
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">⚖️</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Load Balancing</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Distributing traffic across multiple servers to prevent overload and improve response times. Essential for high-traffic sites.</p><span class="tag ty">Architecture</span><span class="tag tc">Performance</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🌐</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Content Delivery Networks</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Geographically distributed caching of static assets, serving content from nodes close to end-users — reducing latency globally.</p><span class="tag tg">CDN</span><span class="tag tr">Latency</span></div>
+      </div>
+
+      <div class="sh rev mt3" style="margin-top:4rem;"><span class="sh-lbl">// topic_04</span><h2 class="sh-title">User Access &amp; <em>Resources</em></h2><div class="sh-rule"></div></div>
+      <div class="card rev mt3 mb3"><p style="font-size:.95rem;color:var(--txt2);line-height:1.8;margin:0;"><strong class="tc-g">User Access Management</strong> controls who can access what, following the principle of least privilege. This covers authentication (verify identity), authorisation (define permissions), and audit logging. <strong class="tc-c">Resource allocation</strong> — how CPU, RAM, bandwidth, and storage are provisioned — is handled dynamically in cloud environments. Rate limiting and quotas prevent abuse and ensure fair distribution.</p></div>
+      <div class="g3">
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🔑</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">OAuth 2.0 / OIDC</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Industry-standard delegated authorisation and identity federation. Powers "Login with Google" and SSO flows.</p><span class="tag tr">Auth</span><span class="tag tg">Identity</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">🧱</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Role-Based Access Control</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Permissions assigned to roles, not individuals. Simplifies management at scale and enforces least-privilege.</p><span class="tag tc">Access</span><span class="tag ty">Enterprise</span></div>
+        <div class="card rev"><span style="font-size:1.8rem;display:block;margin-bottom:.7rem;">📊</span><p style="font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem;">Performance Budgets</p><p style="font-size:.88rem;color:var(--txt2);margin-bottom:.8rem;">Defining limits on page weight, load times, and request counts ensures consistent UX for all users.</p><span class="tag tg">Performance</span><span class="tag tc">UX</span></div>
+      </div>
+    </div></section>
+  </div>
+  <footer class="footer"><div class="container"><div class="footer-logo">[YUV]</div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="blog.html">Blog</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div><p class="footer-copy">© 2025 Yuvraj · ICT114 Web Development · Wentworth Institute of Higher Education</p></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yuvraj — IT student, cybersecurity enthusiast, web developer.">
+  <title>Yuvraj | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <!-- Scroll progress -->
+  <div id="scroll-bar"></div>
+  <nav class="navbar" role="navigation">
+    <a href="index.html" class="nav-logo"><span class="b">[</span>YUV<span class="b">]</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="page-wrapper">
+
+    <section class="hero">
+      <canvas id="matrix-canvas" style="width:100%;height:100%;"></canvas>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="h-term"><span class="p">root@portfolio:~$</span> ./whoami.sh</div>
+          <p class="h-hi">Hello, World. I'm</p>
+          <h1 class="h-name"><span>YUVRAJ</span></h1>
+          <div class="h-role" id="typingEl"><span class="ttext"></span><span class="cur"></span></div>
+          <p class="h-desc">Bachelor of IT student at <strong class="tc-c">Wentworth Institute of Higher Education</strong>. Passionate about cybersecurity, web development, and building things that matter.</p>
+          <div class="h-ctas">
+            <a href="projects.html" class="btn btn-solid">View Projects</a>
+            <a href="contact.html"  class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section" style="padding:3rem 0;">
+      <div class="container">
+        <div class="g4">
+          <div class="card rev" style="text-align:center;padding:2rem 1.5rem;">
+            <div class="stat-n" data-count="8">0</div><div class="stat-l">Web Pages</div>
+          </div>
+          <div class="card rev" style="text-align:center;padding:2rem 1.5rem;">
+            <div class="stat-n" data-count="5">0</div><div class="stat-l">Projects Done</div>
+          </div>
+          <div class="card rev" style="text-align:center;padding:2rem 1.5rem;">
+            <div class="stat-n" data-count="3">0</div><div class="stat-l">Years Coding</div>
+          </div>
+          <div class="card rev" style="text-align:center;padding:2rem 1.5rem;">
+            <div class="stat-n" data-count="10">0</div><div class="stat-l">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I do -->
+    <section class="section s-alt" style="padding:5rem 0 7rem;">
+      <div class="container">
+        <div class="sh rev">
+          <span class="sh-lbl">// capabilities</span>
+          <h2 class="sh-title">What I <em>Do</em></h2>
+          <div class="sh-rule"></div>
+        </div>
+        <div class="g3 mt3">
+          <div class="card rev">
+            <div style="font-size:2rem;margin-bottom:.9rem;">🔐</div>
+            <h3 style="font-family:var(--fh);font-size:1rem;color:var(--green);margin-bottom:.55rem;font-weight:700;">Cybersecurity</h3>
+            <p class="tc-2" style="font-size:.92rem;">Vulnerability analysis, ethical hacking fundamentals, OWASP Top 10, and building secure web applications from the ground up.</p>
+          </div>
+          <div class="card rev">
+            <div style="font-size:2rem;margin-bottom:.9rem;">🌐</div>
+            <h3 style="font-family:var(--fh);font-size:1rem;color:var(--cyan);margin-bottom:.55rem;font-weight:700;">Web Development</h3>
+            <p class="tc-2" style="font-size:.92rem;">Responsive, accessible websites using HTML5, CSS3, and JavaScript with clean, maintainable code and polished UX.</p>
+          </div>
+          <div class="card rev">
+            <div style="font-size:2rem;margin-bottom:.9rem;">🗄️</div>
+            <h3 style="font-family:var(--fh);font-size:1rem;color:var(--gold);margin-bottom:.55rem;font-weight:700;">Database Design</h3>
+            <p class="tc-2" style="font-size:.92rem;">Relational modelling, normalisation to 3NF, SQL implementation, stored procedures, and data dictionary documentation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" style="padding:5.5rem 0;">
+      <div class="container">
+        <div class="sh rev">
+          <span class="sh-lbl">// featured</span>
+          <h2 class="sh-title">Recent <em>Projects</em></h2>
+          <div class="sh-rule"></div>
+        </div>
+        <div class="g2 mt3">
+          <div class="card rev">
+            <span class="tag tg">HTML5</span><span class="tag tc">CSS3</span><span class="tag tr">JavaScript</span>
+            <h3 style="font-family:var(--fh);font-size:1.05rem;margin:1rem 0 .5rem;font-weight:700;">Personal Portfolio Website</h3>
+            <p style="font-size:.9rem;color:var(--txt2);">8-page personal portfolio with responsive design, CSS3 animations, and JS form validation. Built for ICT114 assessment.</p>
+            <a href="projects.html" class="btn btn-ghost" style="margin-top:1.1rem;font-size:.72rem;padding:.5rem 1rem;">View Details →</a>
+          </div>
+          <div class="card rev">
+            <span class="tag ty">SQL</span><span class="tag tc">ERD</span><span class="tag tg">MySQL</span>
+            <h3 style="font-family:var(--fh);font-size:1.05rem;margin:1rem 0 .5rem;font-weight:700;">Aurora Fitness & Wellness DB</h3>
+            <p style="font-size:.9rem;color:var(--txt2);">Full relational database design: ER diagram, 3NF normalisation, DDL/DML scripts, views, and stored procedures.</p>
+            <a href="projects.html" class="btn btn-ghost" style="margin-top:1.1rem;font-size:.72rem;padding:.5rem 1rem;">View Details →</a>
+          </div>
+        </div>
+        <div class="center mt3"><a href="projects.html" class="btn btn-solid">All Projects</a></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section s-alt center" style="padding:5rem 0 7rem;">
+      <div class="container rev">
+        <span class="sh-lbl" style="justify-content:center;display:block;">// connect</span>
+        <h2 class="sh-title" style="margin-bottom:1rem;">Let's <em>Connect</em></h2>
+        <p class="tc-2 mt2" style="max-width:460px;margin:0 auto 2rem;">Have a project, question, or just want to say hi? I'm always happy to connect.</p>
+        <a href="contact.html" class="btn btn-solid">Send a Message</a>
+      </div>
+    </section>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">[YUV]</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a><a href="education.html">Education</a>
+        <a href="blog.html">Blog</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Yuvraj &nbsp;·&nbsp; ICT114 Web Development &nbsp;·&nbsp; Wentworth Institute of Higher Education</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

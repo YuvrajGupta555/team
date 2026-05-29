@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj | Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-bar"></div>
+  <nav class="navbar" role="navigation">
+    <a href="index.html" class="nav-logo"><span class="b">[</span>YUV<span class="b">]</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li><li><a href="blog.html">Blog</a></li>
+      <li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hbg" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="page-wrapper">
+    <section class="ph"><div class="container">
+      <span class="ph-lbl">// projects/</span>
+      <h1 class="ph-title">My Projects</h1>
+      <p class="ph-sub">Academic and personal projects spanning web, databases, networking, and security.</p>
+    </div></section>
+    <section class="section"><div class="container">
+      <!-- Filter -->
+      <div class="rev" style="display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2.5rem;" id="filterBtns">
+        <button class="btn btn-solid filter-btn" data-filter="all" style="font-size:.72rem;padding:.5rem 1rem;">All</button>
+        <button class="btn btn-ghost filter-btn" data-filter="web" style="font-size:.72rem;padding:.5rem 1rem;">Web Dev</button>
+        <button class="btn btn-ghost filter-btn" data-filter="db" style="font-size:.72rem;padding:.5rem 1rem;">Database</button>
+        <button class="btn btn-ghost filter-btn" data-filter="network" style="font-size:.72rem;padding:.5rem 1rem;">Networking</button>
+        <button class="btn btn-ghost filter-btn" data-filter="security" style="font-size:.72rem;padding:.5rem 1rem;">Security</button>
+      </div>
+      <div class="g2" id="projectGrid">
+        <div class="card rev project-card" data-cat="web">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;"><span style="font-size:1.8rem;">🌐</span><span class="tag tg">Web Dev</span></div>
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;">Personal Portfolio Website</h3>
+          <p style="font-size:.9rem;color:var(--txt2);margin-bottom:1rem;">8-page portfolio built for ICT114. Responsive design, CSS3 animations, contact form with full JS validation, and a cybersecurity theme.</p>
+          <div style="margin-bottom:1rem;"><span class="tag tg">HTML5</span><span class="tag tc">CSS3</span><span class="tag tr">JavaScript</span><span class="tag ty">Responsive</span></div>
+          <span class="tag tc" style="padding:.38rem .8rem;">In Progress</span>
+        </div>
+        <div class="card rev project-card" data-cat="db">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;"><span style="font-size:1.8rem;">🗄️</span><span class="tag ty">Database</span></div>
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;">Aurora Fitness &amp; Wellness Hub DB</h3>
+          <p style="font-size:.9rem;color:var(--txt2);margin-bottom:1rem;">Full relational database: 5 entities, ER diagram, normalisation to 3NF, data dictionary, DDL/DML scripts, views, and stored procedures.</p>
+          <div style="margin-bottom:1rem;"><span class="tag ty">MySQL</span><span class="tag tc">ERD</span><span class="tag tg">3NF</span><span class="tag tr">SQL</span></div>
+          <span class="tag tg" style="padding:.38rem .8rem;">✓ Completed</span>
+        </div>
+        <div class="card rev project-card" data-cat="network">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;"><span style="font-size:1.8rem;">🔌</span><span class="tag tc">Networking</span></div>
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;">Cisco Packet Tracer Network Topology</h3>
+          <p style="font-size:.9rem;color:var(--txt2);margin-bottom:1rem;">Multi-device topology analysis covering physical vs logical topology, data path tracing, failure points, and redundancy proposals.</p>
+          <div style="margin-bottom:1rem;"><span class="tag tc">Packet Tracer</span><span class="tag ty">TCP/IP</span><span class="tag tg">VLANs</span></div>
+          <span class="tag tg" style="padding:.38rem .8rem;">✓ Completed</span>
+        </div>
+        <div class="card rev project-card" data-cat="security">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;"><span style="font-size:1.8rem;">🔐</span><span class="tag tr">Security</span></div>
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;">OWASP Top 10 Research Project</h3>
+          <p style="font-size:.9rem;color:var(--txt2);margin-bottom:1rem;">Self-directed deep dive into the OWASP Top 10 web vulnerabilities. Covered injection, broken auth, XSS, and defence strategies for each.</p>
+          <div style="margin-bottom:1rem;"><span class="tag tr">OWASP</span><span class="tag tr">XSS</span><span class="tag tr">SQLi</span><span class="tag tc">Defence</span></div>
+          <span class="tag tg" style="padding:.38rem .8rem;">✓ Completed</span>
+        </div>
+        <div class="card rev project-card" data-cat="web">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;"><span style="font-size:1.8rem;">🎨</span><span class="tag tg">Web Dev</span></div>
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;">KrisCo Pest Control Marketing Materials</h3>
+          <p style="font-size:.9rem;color:var(--txt2);margin-bottom:1rem;">Business card layout and marketing materials using Python with PIL and OpenCV. Iterative image editing with text visibility corrections.</p>
+          <div style="margin-bottom:1rem;"><span class="tag tg">Python</span><span class="tag tc">PIL</span><span class="tag ty">OpenCV</span></div>
+          <span class="tag tg" style="padding:.38rem .8rem;">✓ Completed</span>
+        </div>
+      </div>
+    </div></section>
+  </div>
+  <footer class="footer"><div class="container">
+    <div class="footer-logo">[YUV]</div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="blog.html">Blog</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div>
+    <p class="footer-copy">© 2025 Yuvraj · ICT114 Web Development · Wentworth Institute of Higher Education</p>
+  </div></footer>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('filterBtns').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn'); if (!btn) return;
+      document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('btn-solid'); b.classList.add('btn-ghost'); });
+      btn.classList.add('btn-solid'); btn.classList.remove('btn-ghost');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(c => { c.style.display = (f==='all'||c.dataset.cat===f)?'':'none'; });
+    });
+  </script>
+</body>
+</html>
